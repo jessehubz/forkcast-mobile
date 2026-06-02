@@ -52,6 +52,8 @@ const HERO_H = Math.round(SCREEN_H * 0.42);  // hero takes top 42% of screen
 //    ├─ Loading  → SkeletonPulse components (pulsing grey placeholders)
 //    ├─ Error    → errorCard  (connection problem card with Retry button)
 //    └─ Empty    → emptyWrap  (no results message)
+
+// test change
 //
 // ─────────────────────────────────────────────────────────────────────────────
 
