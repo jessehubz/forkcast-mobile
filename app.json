@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Forkcast",
+    "slug": "forkast-mobile",
+    "version": "1.0.0",
+    "scheme": "forkast",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ph.forkcast.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Forkcast uses your location to show nearby restaurants.",
+        "NSLocationAlwaysUsageDescription": "Forkcast uses your location to show nearby restaurants."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFFFF",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "package": "ph.forkcast.app",
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-image-picker",
+      [
+        "react-native-maps",
+        {
+          "googleMapsApiKey": ""
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "supabaseUrl": "https://vymzbqmkwninpkzyamzn.supabase.co",
+      "supabaseAnonKey": "sb_publishable_iwyHMjacfyUvciCHlXA8gw_my3o8YEx"
+    }
+  }
+}
